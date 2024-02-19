@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-xeou
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0039-tenant/tkrw-pr712-0075-0039-app/devfile-sample-xeou@sha256:2da496c5bbe9b2e6ba4ea1a0f9dedd9f3b165673b924ee9dc55a2ff74b0834fd
+        name: my-nodejs
+        resources: {}
+status: {}
